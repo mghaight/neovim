@@ -20,6 +20,8 @@ require("typst-preview").setup()
 
 require("telescope").setup({
   pickers = {
-    theme = "ivy"
+    find_files = { theme = "ivy" },
+    buffers = { theme = "ivy" },
+    live_grep = { theme = "ivy" },
   }
 })
