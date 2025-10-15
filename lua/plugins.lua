@@ -15,5 +15,3 @@ require("blink.cmp").setup({
 })
 
 require("typst-preview").setup()
-
-require("nvim-treesitter").install { "lua", "r", "typst", "markdown", "bash" }
