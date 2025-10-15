@@ -1,0 +1,21 @@
+{
+  "plugins": {
+    "blink.cmp": {
+      "rev": "5037cfa",
+      "src": "https://github.com/Saghen/blink.cmp"
+    },
+    "nvim-lspconfig": {
+      "rev": "ac98db2",
+      "src": "https://github.com/neovim/nvim-lspconfig"
+    },
+    "nvim-treesitter": {
+      "rev": "0606c7a9",
+      "src": "https://github.com/nvim-treesitter/nvim-treesitter",
+      "version": "'main'"
+    },
+    "typst-preview.nvim": {
+      "rev": "1603d37",
+      "src": "https://github.com/chomosuke/typst-preview.nvim"
+    }
+  }
+}

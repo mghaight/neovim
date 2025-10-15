@@ -1,0 +1,8 @@
+require("config")
+require("plugins")
+require("lsp")
+require("keymaps")
+require("statusline")
+require("colorscheme")
+require("autocommands")
+require("digraphs")
