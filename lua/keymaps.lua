@@ -23,3 +23,8 @@ vim.keymap.set("i", "<C-q>", "<C-k>", { noremap = true, desc = "Insert digraph" 
 -- splitting windows
 vim.keymap.set("n", "<C-w>\\", ":vsplit<CR>")
 vim.keymap.set("n", "<C-w>-", ":split<CR>")
+
+-- telescope maps
+vim.keymap.set("n", "<leader>ff", require("telescope.builtin").find_files, { desc = "[F]ind [f]iles" })
+vim.keymap.set("n", "<leader>fb", require("telescope.builtin").buffers, { desc = "[F]ind [b]uffers" })
+vim.keymap.set("n", "<leader>fg", require("telescope.builtin").live_grep, { desc = "[F]ind via [g]rep" })
