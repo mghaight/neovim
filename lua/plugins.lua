@@ -17,3 +17,9 @@ require("blink.cmp").setup({
 })
 
 require("typst-preview").setup()
+
+require("telescope").setup({
+  pickers = {
+    theme = "ivy"
+  }
+})
