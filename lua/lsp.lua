@@ -1,12 +1,14 @@
 vim.lsp.enable({
-  "lua_ls",            -- lua
-  "tinymist",          -- typst
-  "r_language_server", -- R
+  "lua_ls",                      -- lua
+  "tinymist",                    -- typst
+  "r_language_server",           -- R
+  "vscode-html-language-server", -- html
+  "html",                        -- html
 })
 
 vim.lsp.config("tinymist", {
   settings = {
-    formatterMode = "typstyle",
+    formatterMode = "typstfmt",
   },
 })
 

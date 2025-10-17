@@ -20,11 +20,19 @@ vim.keymap.set("n", "<C-k>", "<C-y>")
 -- taking back digraphs from my readline conflicts
 vim.keymap.set("i", "<C-q>", "<C-k>", { noremap = true, desc = "Insert digraph" })
 
--- splitting windows
-vim.keymap.set("n", "<C-w>\\", ":vsplit<CR>")
-vim.keymap.set("n", "<C-w>-", ":split<CR>")
+-- inc search hacks
+vim.keymap.set("n", "n", "nzz")
+vim.keymap.set("n", "N", "Nzz")
+
+-- page down hacks
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
 
 -- telescope maps
 vim.keymap.set("n", "<leader>ff", require("telescope.builtin").find_files, { desc = "[F]ind [f]iles" })
 vim.keymap.set("n", "<leader>fb", require("telescope.builtin").buffers, { desc = "[F]ind [b]uffers" })
 vim.keymap.set("n", "<leader>fg", require("telescope.builtin").live_grep, { desc = "[F]ind via [g]rep" })
+
+-- lsp keymaps
+vim.keymap.set("n", "<leader>ld", vim.diagnostic.open_float) -- use <leader>ld to open diagnostic popup
+vim.keymap.set("n", "<leader>lq", vim.lsp.buf.hover)         -- use <leader>lq to lookup symbol under cursor
