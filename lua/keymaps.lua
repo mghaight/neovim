@@ -33,6 +33,10 @@ vim.keymap.set("n", "<leader>ff", require("telescope.builtin").find_files, { des
 vim.keymap.set("n", "<leader>fb", require("telescope.builtin").buffers, { desc = "[F]ind [b]uffers" })
 vim.keymap.set("n", "<leader>fg", require("telescope.builtin").live_grep, { desc = "[F]ind via [g]rep" })
 
+-- quick access maps
+vim.keymap.set("n", "<leader>r", ":RepluaOpen<CR>")
+vim.keymap.set("n", "-", ":Oil .<CR>")
+
 -- lsp keymaps
 vim.keymap.set("n", "<leader>ld", vim.diagnostic.open_float) -- use <leader>ld to open diagnostic popup
 vim.keymap.set("n", "<leader>lq", vim.lsp.buf.hover)         -- use <leader>lq to lookup symbol under cursor

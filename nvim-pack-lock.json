@@ -1,7 +1,7 @@
 {
   "plugins": {
     "blink.cmp": {
-      "rev": "5037cfa",
+      "rev": "a4ab037",
       "src": "https://github.com/Saghen/blink.cmp"
     },
     "nvim-lspconfig": {
@@ -13,9 +13,17 @@
       "src": "https://github.com/nvim-treesitter/nvim-treesitter",
       "version": "'master'"
     },
+    "oil.nvim": {
+      "rev": "7194872",
+      "src": "https://github.com/stevearc/oil.nvim"
+    },
     "plenary.nvim": {
       "rev": "b9fd522",
       "src": "https://github.com/nvim-lua/plenary.nvim"
+    },
+    "replua.nvim": {
+      "rev": "8084695",
+      "src": "https://github.com/mghaight/replua.nvim"
     },
     "telescope.nvim": {
       "rev": "b4da76b",

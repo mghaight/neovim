@@ -54,7 +54,6 @@ vim.api.nvim_create_autocmd({ "DirChanged", "BufEnter", "BufWritePost" }, {
 -- statusline format
 local statusline = {
   "%F",                  -- filepath
-  -- "%r",                    -- read only marker
   "%m",                  -- modified marker
   "%=",
   "%{v:lua.git_info()}", -- git info

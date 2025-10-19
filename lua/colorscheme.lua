@@ -1,5 +1,5 @@
 -- check system colorscheme
-local function system_is_dark()
+local function system_dark()
   local handle = io.popen("defaults read -g AppleInterfaceStyle 2>/dev/null")
   local result = handle:read("*a")
   handle:close()
@@ -7,7 +7,7 @@ local function system_is_dark()
 end
 
 -- change vim colorscheme depending on system color
-if system_is_dark() then
+if system_dark() then
   vim.cmd.colorscheme("PaperColorSlim")
 else
   vim.cmd.colorscheme("PaperColorSlimLight")
