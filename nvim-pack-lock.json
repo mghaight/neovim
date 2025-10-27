@@ -1,11 +1,11 @@
 {
   "plugins": {
     "blink.cmp": {
-      "rev": "a4ab037",
+      "rev": "8743384",
       "src": "https://github.com/Saghen/blink.cmp"
     },
     "nvim-lspconfig": {
-      "rev": "ac98db2",
+      "rev": "ececa53",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-treesitter": {
@@ -14,7 +14,7 @@
       "version": "'master'"
     },
     "oil.nvim": {
-      "rev": "7194872",
+      "rev": "7e1cd77",
       "src": "https://github.com/stevearc/oil.nvim"
     },
     "plenary.nvim": {
@@ -22,7 +22,7 @@
       "src": "https://github.com/nvim-lua/plenary.nvim"
     },
     "replua.nvim": {
-      "rev": "8084695",
+      "rev": "8ed56f5",
       "src": "https://github.com/mghaight/replua.nvim"
     },
     "telescope.nvim": {
@@ -30,7 +30,7 @@
       "src": "https://github.com/nvim-telescope/telescope.nvim"
     },
     "typst-preview.nvim": {
-      "rev": "1603d37",
+      "rev": "e544812",
       "src": "https://github.com/chomosuke/typst-preview.nvim"
     }
   }

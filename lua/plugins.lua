@@ -12,13 +12,23 @@ vim.pack.add {
 require("blink.cmp").setup({
   completion = {
     menu = { border = "none" },
+    -- ghost_text = { enabled = true },
+    -- documentation = {
+    --   auto_show = true,
+    -- },
+    trigger = {
+      show_on_backspace = true,
+      show_on_backspace_in_keyword = true,
+    },
   },
   fuzzy = {
     implementation = "lua",
   },
 })
 
-require("typst-preview").setup()
+require("typst-preview").setup({
+  -- invert_colors = "auto",
+})
 
 require 'nvim-treesitter.configs'.setup {
   ensure_installed = { "lua", "fennel", "html", "python", "r", "markdown", "markdown_inline" },

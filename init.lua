@@ -6,3 +6,4 @@ require("statusline")
 require("colorscheme")
 require("autocommands")
 require("digraphs")
+-- test

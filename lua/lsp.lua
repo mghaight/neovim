@@ -2,8 +2,10 @@ vim.lsp.enable({
   "lua_ls",                      -- lua
   "tinymist",                    -- typst
   "r_language_server",           -- R
+  "basedpyright",                -- python
   "vscode-html-language-server", -- html
   "html",                        -- html
+  "rust_analyzer",               -- rust
 })
 
 vim.lsp.config("tinymist", {
