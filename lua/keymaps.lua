@@ -30,6 +30,12 @@ vim.keymap.set("n", "<C-d>", "<C-d>zz")
 
 -- telescope maps
 vim.keymap.set("n", "<leader>ff", require("telescope.builtin").find_files, { desc = "[F]ind [f]iles" })
+vim.keymap.set("n", "<leader>fa", function()
+  require("telescope.builtin").find_files({
+    no_ignore = true,
+    hidden = true
+  })
+end, { desc = "[F]ind [a]ll files" })
 vim.keymap.set("n", "<leader>fb", require("telescope.builtin").buffers, { desc = "[F]ind [b]uffers" })
 vim.keymap.set("n", "<leader>fg", require("telescope.builtin").live_grep, { desc = "[F]ind via [g]rep" })
 
@@ -40,3 +46,14 @@ vim.keymap.set("n", "-", ":Oil .<CR>")
 -- lsp keymaps
 vim.keymap.set("n", "<leader>ld", vim.diagnostic.open_float) -- use <leader>ld to open diagnostic popup
 vim.keymap.set("n", "<leader>lq", vim.lsp.buf.hover)         -- use <leader>lq to lookup symbol under cursor
+
+-- diagnostic keymaps
+-- jump to next diagnostic
+vim.keymap.set("n", "<leader>dn", function()
+  vim.diagnostic.jump({ count = 1, float = true })
+end)
+
+-- jump to prev diagnostic
+vim.keymap.set("n", "<leader>dp", function()
+  vim.diagnostic.jump({ count = -1, float = true })
+end)

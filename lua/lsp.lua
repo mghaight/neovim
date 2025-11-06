@@ -1,8 +1,10 @@
 vim.lsp.enable({
   "lua_ls",                      -- lua
   "tinymist",                    -- typst
+  "texlab",                      -- latex
   "r_language_server",           -- R
-  "basedpyright",                -- python
+  -- "basedpyright",                -- python
+  "pyrefly",                     --python
   "vscode-html-language-server", -- html
   "html",                        -- html
   "rust_analyzer",               -- rust
