@@ -1,11 +1,11 @@
 {
   "plugins": {
     "blink.cmp": {
-      "rev": "8743384",
+      "rev": "ab1b366",
       "src": "https://github.com/Saghen/blink.cmp"
     },
     "nvim-lspconfig": {
-      "rev": "ececa53",
+      "rev": "2010fc6",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-treesitter": {
@@ -26,11 +26,11 @@
       "src": "https://github.com/mghaight/replua.nvim"
     },
     "telescope.nvim": {
-      "rev": "b4da76b",
+      "rev": "0294ae3",
       "src": "https://github.com/nvim-telescope/telescope.nvim"
     },
     "typst-preview.nvim": {
-      "rev": "e544812",
+      "rev": "64469f8",
       "src": "https://github.com/chomosuke/typst-preview.nvim"
     }
   }

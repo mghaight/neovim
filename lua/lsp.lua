@@ -12,13 +12,14 @@ vim.lsp.enable({
 
 vim.lsp.config("tinymist", {
   settings = {
-    formatterMode = "typstfmt",
+    formatterMode = "typstyle",
   },
 })
 
 vim.lsp.config("lua_ls", {
   settings = {
     Lua = {
+      hint = { enable = true },
       workspace = {
         library = vim.api.nvim_get_runtime_file("", true),
       },

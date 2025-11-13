@@ -46,12 +46,18 @@ vim.keymap.set("n", "-", ":Oil .<CR>")
 -- lsp keymaps
 vim.keymap.set("n", "<leader>ld", vim.diagnostic.open_float) -- use <leader>ld to open diagnostic popup
 vim.keymap.set("n", "<leader>lq", vim.lsp.buf.hover)         -- use <leader>lq to lookup symbol under cursor
+-- use <leader>lh to toggle inlay hints
+vim.keymap.set("n", "<leader>lh", function()
+  vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+  vim.notify(vim.lsp.inlay_hint.is_enabled() and "Inlay Hints Enabled" or "Inlay Hints Disabled")
+end)
 
 -- diagnostic keymaps
 -- jump to next diagnostic
 vim.keymap.set("n", "<leader>dn", function()
   vim.diagnostic.jump({ count = 1, float = true })
 end)
+
 
 -- jump to prev diagnostic
 vim.keymap.set("n", "<leader>dp", function()
